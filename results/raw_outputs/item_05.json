@@ -1,0 +1,10 @@
+{
+  "id": "item_05",
+  "model": "claude-haiku-4-5-20251001",
+  "run_at": "2026-09-20T12:28:09.235319+00:00",
+  "system_prompt": "You are a financial analyst. You will be given a small financial table and one question about it. Respond with:\nAnswer: the computed figure or figures the question asks for.\nCommentary: 2-4 sentences explaining what the figures mean and what drove the result.\nUse only the data provided in the table.",
+  "prompt": "Units: GBP k\n\n| Line item | FY2024 | FY2025 |\n|---|---|---|\n| Revenue | 7,300 | 8,030 |\n| Trade receivables at year end | 900 | 1,320 |\n\nQuestion: Calculate days sales outstanding (year-end trade receivables divided by revenue, multiplied by 365) for both years. What happened, and what does it mean for cash?",
+  "response": "Answer: \n- FY2024 DSO: 45.0 days\n- FY2025 DSO: 59.9 days\n\n**Calculation:**\n- FY2024: (900 / 7,300) × 365 = 45.0 days\n- FY2025: (1,320 / 8,030) × 365 = 59.9 days\n\nCommentary: Days sales outstanding increased by approximately 15 days year-over-year, indicating that the company is taking significantly longer to collect payment from customers. While revenue grew by 10% (£730k), trade receivables jumped 47% (£420k), suggesting either extended payment terms have been offered to drive sales growth, or collection performance has deteriorated. This is a negative development for cash flow, as cash is tied up in receivables for longer, potentially straining working capital and increasing the risk of bad debts.",
+  "input_tokens": 176,
+  "output_tokens": 210
+}

@@ -1,0 +1,10 @@
+{
+  "id": "item_08",
+  "model": "claude-haiku-4-5-20251001",
+  "run_at": "2026-09-20T12:28:16.922316+00:00",
+  "system_prompt": "You are a financial analyst. You will be given a small financial table and one question about it. Respond with:\nAnswer: the computed figure or figures the question asks for.\nCommentary: 2-4 sentences explaining what the figures mean and what drove the result.\nUse only the data provided in the table.",
+  "prompt": "Units: GBP k\n\n| Line item | FY2024 | FY2025 |\n|---|---|---|\n| Revenue | 3,000 | 3,060 |\n| Operating costs | 2,700 | 2,815 |\n| Gain on sale of property (one-off) | 0 | 250 |\n| Operating profit | 300 | 495 |\n\nQuestion: Operating profit rose strongly in FY2025. How strong was the underlying improvement?",
+  "response": "Answer: The underlying operating profit improvement was £95k, representing a 31.7% increase in underlying operating performance.\n\nCommentary: While reported operating profit rose by £195k (from £300k to £495k), £250k of this was attributable to a one-off gain on the sale of property. Stripping out this non-recurring item, underlying operating profit improved from £300k to £395k, driven by a combination of revenue growth of £60k (2%) and a reduction in operating costs as a percentage of sales. The underlying 31.7% improvement demonstrates solid operational leverage, though the headline profit growth was significantly boosted by the one-off property transaction.",
+  "input_tokens": 190,
+  "output_tokens": 149
+}

@@ -1,0 +1,10 @@
+{
+  "id": "item_09",
+  "model": "claude-haiku-4-5-20251001",
+  "run_at": "2026-09-20T12:28:19.272291+00:00",
+  "system_prompt": "You are a financial analyst. You will be given a small financial table and one question about it. Respond with:\nAnswer: the computed figure or figures the question asks for.\nCommentary: 2-4 sentences explaining what the figures mean and what drove the result.\nUse only the data provided in the table.",
+  "prompt": "Units: GBP k unless stated\n\n| Line item | FY2024 | FY2025 |\n|---|---|---|\n| Revenue (GBP m) | 12.0 | 13.2 |\n| Cost of sales | 7,200 | 8,184 |\n\nQuestion: Calculate gross margin for both years and explain the change.",
+  "response": "**Answer:**\n\nFY2024 Gross Margin: 40.0%\nFY2025 Gross Margin: 38.1%\n\n**Commentary:**\n\nGross margin declined by 1.9 percentage points year-over-year despite revenue growing 10% from £12.0m to £13.2m. This deterioration was driven by cost of sales increasing at a faster rate (13.7% growth) than revenue, indicating rising input costs or manufacturing inefficiencies that were not fully offset by pricing power. The company's ability to convert each pound of sales into gross profit weakened, which could signal margin pressure from supply chain inflation or competitive pricing constraints.",
+  "input_tokens": 158,
+  "output_tokens": 151
+}

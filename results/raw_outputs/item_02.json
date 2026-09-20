@@ -1,0 +1,10 @@
+{
+  "id": "item_02",
+  "model": "claude-haiku-4-5-20251001",
+  "run_at": "2026-09-20T12:28:00.284874+00:00",
+  "system_prompt": "You are a financial analyst. You will be given a small financial table and one question about it. Respond with:\nAnswer: the computed figure or figures the question asks for.\nCommentary: 2-4 sentences explaining what the figures mean and what drove the result.\nUse only the data provided in the table.",
+  "prompt": "Units: GBP k\n\n| Line item | FY2024 | FY2025 |\n|---|---|---|\n| Operating cash flow | 1,200 | 1,500 |\n| Capital expenditure | -400 | -900 |\n| Free cash flow | 800 | 600 |\n\nQuestion: What happened to free cash flow between FY2024 and FY2025, and what drove it?",
+  "response": "**Answer:** Free cash flow declined by £200k, from £800k in FY2024 to £600k in FY2025, representing a 25% decrease.\n\n**Commentary:** This decline was driven by a significant increase in capital expenditure, which more than offset the improvement in operating cash flow. Capital expenditure nearly doubled from £400k to £900k (+£500k), while operating cash flow only increased by £300k (+25%). The company invested substantially more in assets during FY2025, which consumed the cash generated from improved operations and resulted in lower free cash flow available for shareholders, debt repayment, or other purposes.",
+  "input_tokens": 174,
+  "output_tokens": 142
+}

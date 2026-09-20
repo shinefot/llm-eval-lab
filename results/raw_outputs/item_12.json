@@ -1,0 +1,10 @@
+{
+  "id": "item_12",
+  "model": "claude-haiku-4-5-20251001",
+  "run_at": "2026-09-20T12:28:28.080841+00:00",
+  "system_prompt": "You are a financial analyst. You will be given a small financial table and one question about it. Respond with:\nAnswer: the computed figure or figures the question asks for.\nCommentary: 2-4 sentences explaining what the figures mean and what drove the result.\nUse only the data provided in the table.",
+  "prompt": "Units: GBP k\n\n| Product | Revenue FY2024 | Revenue FY2025 | Gross profit FY2024 | Gross profit FY2025 |\n|---|---|---|---|---|\n| Product A (premium) | 6,000 | 4,000 | 3,000 | 2,080 |\n| Product B (budget) | 4,000 | 8,000 | 800 | 1,760 |\n| Total | 10,000 | 12,000 | 3,800 | 3,840 |\n\nQuestion: Total gross margin fell in FY2025. Which product's margin performance is responsible?",
+  "response": "Answer: Product A's gross margin declined, driving the overall result. Product A's margin fell from 50% (FY2024: £3,000/£6,000) to 52% (FY2025: £2,080/£4,000), while Product B's margin improved from 20% to 22%.\n\nCommentary: Although Product B improved its margin performance year-on-year, the total gross margin actually remained essentially flat at 38% (FY2024: £3,800/£10,000 vs FY2025: £3,840/£12,000). The question's premise that total gross margin fell in FY2025 is not supported by the data—total margin remained stable. However, if there was a margin decline, it would be attributable to the significant revenue shift toward the lower-margin Product B (which grew from 40% to 67% of total revenue), despite Product B's own margin improvement.",
+  "input_tokens": 234,
+  "output_tokens": 212
+}

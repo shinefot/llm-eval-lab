@@ -1,0 +1,10 @@
+{
+  "id": "item_11",
+  "model": "claude-haiku-4-5-20251001",
+  "run_at": "2026-09-20T12:28:25.211638+00:00",
+  "system_prompt": "You are a financial analyst. You will be given a small financial table and one question about it. Respond with:\nAnswer: the computed figure or figures the question asks for.\nCommentary: 2-4 sentences explaining what the figures mean and what drove the result.\nUse only the data provided in the table.",
+  "prompt": "Units: GBP k\n\n| Line item | FY2024 | FY2025 |\n|---|---|---|\n| Net profit | 400 | 600 |\n| Depreciation | 100 | 100 |\n| Change in trade receivables (cash impact) | -50 | -450 |\n| Change in inventory (cash impact) | -30 | -280 |\n| Change in trade payables (cash impact) | 20 | 30 |\n| Operating cash flow | 440 | 0 |\n\nQuestion: Net profit grew 50% in FY2025. Can the company comfortably fund a GBP 300k dividend from this year's operating cash flow?",
+  "response": "Answer: No, the company cannot comfortably fund a GBP 300k dividend from FY2025 operating cash flow.\n\nCommentary: Despite net profit growing 50% to GBP 600k in FY2025, operating cash flow collapsed to GBP 0k, driven by a dramatic GBP 730k increase in working capital outflows (trade receivables up GBP 450k and inventory up GBP 280k). This means there is zero cash available for dividend distribution after covering operating obligations. The deterioration reflects severe working capital management issues—likely rapid business growth or inventory buildup—that has decoupled profit growth from actual cash generation.",
+  "input_tokens": 239,
+  "output_tokens": 150
+}

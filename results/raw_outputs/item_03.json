@@ -1,0 +1,10 @@
+{
+  "id": "item_03",
+  "model": "claude-haiku-4-5-20251001",
+  "run_at": "2026-09-20T12:28:03.300805+00:00",
+  "system_prompt": "You are a financial analyst. You will be given a small financial table and one question about it. Respond with:\nAnswer: the computed figure or figures the question asks for.\nCommentary: 2-4 sentences explaining what the figures mean and what drove the result.\nUse only the data provided in the table.",
+  "prompt": "Units: customers\n\n| KPI | Q1 2025 | Q2 2025 |\n|---|---|---|\n| Customers at start of quarter | 2,000 | 2,100 |\n| New customers | 300 | 290 |\n| Churned customers | 200 | 294 |\n| Customers at end of quarter | 2,100 | 2,096 |\n\nQuestion: What happened to the quarterly churn rate (churned customers divided by customers at start of quarter) between Q1 and Q2 2025, and what does it mean for customer growth?",
+  "response": "**Answer:**\n- Q1 2025 churn rate: 10.0% (200 ÷ 2,000)\n- Q2 2025 churn rate: 14.0% (294 ÷ 2,100)\n- Change: 4.0 percentage point increase\n\n**Commentary:**\nThe churn rate deteriorated significantly from Q1 to Q2, rising from 10% to 14%, indicating the company is losing a higher proportion of its customer base each quarter. While new customer additions remained relatively stable (300 vs. 290), the sharp increase in absolute churn (from 200 to 294 customers) overwhelmed new growth, causing net customer count to decline slightly from 2,100 to 2,096. This trend suggests underlying customer satisfaction or product-market fit issues that need immediate attention, as the business is moving from a growth trajectory to stagnation despite maintaining consistent acquisition efforts.",
+  "input_tokens": 214,
+  "output_tokens": 213
+}

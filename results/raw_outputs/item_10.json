@@ -1,0 +1,10 @@
+{
+  "id": "item_10",
+  "model": "claude-haiku-4-5-20251001",
+  "run_at": "2026-09-20T12:28:22.548869+00:00",
+  "system_prompt": "You are a financial analyst. You will be given a small financial table and one question about it. Respond with:\nAnswer: the computed figure or figures the question asks for.\nCommentary: 2-4 sentences explaining what the figures mean and what drove the result.\nUse only the data provided in the table.",
+  "prompt": "Units: count\n\n| KPI | FY2024 | FY2025 |\n|---|---|---|\n| Website visitors | 500,000 | 600,000 |\n| Orders | 10,000 | 15,000 |\n\nQuestion: By how much did the conversion rate (orders divided by visitors) improve, and which contributed more to order growth: traffic or conversion?",
+  "response": "Answer: \n- Conversion rate improved by 0.5 percentage points (from 2.0% to 2.5%)\n- Traffic contributed more to order growth: traffic increased 20% while conversion increased 25%, but the absolute order increase of 5,000 was driven primarily by the traffic gain of 100,000 visitors\n\nCommentary: The conversion rate improved from 2.0% (10,000 orders ÷ 500,000 visitors) in FY2024 to 2.5% (15,000 orders ÷ 600,000 visitors) in FY2025, representing a 25% relative improvement. However, traffic growth (100,000 additional visitors) was the dominant driver of the 5,000 additional orders. The additional 100,000 visitors at the original 2.0% rate would have generated 2,000 orders, while the conversion improvement on the original visitor base contributed approximately 1,000 additional orders, with the remaining growth from conversion on new traffic. This demonstrates that while conversion optimizations are valuable, growing the traffic base had a substantially larger impact on absolute order growth.",
+  "input_tokens": 162,
+  "output_tokens": 257
+}

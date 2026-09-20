@@ -1,0 +1,10 @@
+{
+  "id": "item_04",
+  "model": "claude-haiku-4-5-20251001",
+  "run_at": "2026-09-20T12:28:06.283018+00:00",
+  "system_prompt": "You are a financial analyst. You will be given a small financial table and one question about it. Respond with:\nAnswer: the computed figure or figures the question asks for.\nCommentary: 2-4 sentences explaining what the figures mean and what drove the result.\nUse only the data provided in the table.",
+  "prompt": "Units: GBP k\n\n| Line item | Budget FY2025 | Actual FY2025 |\n|---|---|---|\n| Revenue | 5,000 | 5,300 |\n| Cost of sales | 3,000 | 3,339 |\n| Gross profit | 2,000 | 1,961 |\n| Operating costs | 1,400 | 1,380 |\n| Operating profit | 600 | 581 |\n\nQuestion: Operating profit missed budget even though revenue beat it. Quantify the key variances, state whether each is favourable or adverse, and explain the main driver of the miss.",
+  "response": "# Answer\n\n**Key Variances:**\n\n| Metric | Variance | Classification |\n|---|---|---|\n| Revenue | +£300k | Favourable |\n| Cost of sales | -£339k | Adverse |\n| Gross profit | -£39k | Adverse |\n| Operating costs | +£20k | Favourable |\n| Operating profit | -£19k | Adverse |\n\n**Main Driver:** Cost of sales overrun of £339k (11.3% above budget)\n\n# Commentary\n\nDespite beating revenue by £300k (6% above budget), operating profit fell £19k short of the £600k target due to a significant cost of sales overrun. The cost of sales increased to £3,339k versus the budgeted £3,000k—a £339k adverse variance that more than offset the revenue gain. This suggests margin compression, likely driven by unfavorable product mix, higher input costs, or manufacturing inefficiencies. The modest saving in operating costs of £20k was insufficient to compensate, highlighting that the profitability miss stems from gross margin deterioration rather than operational expense management.",
+  "input_tokens": 226,
+  "output_tokens": 252
+}

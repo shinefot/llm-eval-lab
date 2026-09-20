@@ -1,0 +1,10 @@
+{
+  "id": "item_01",
+  "model": "claude-haiku-4-5-20251001",
+  "run_at": "2026-09-20T12:24:13.059935+00:00",
+  "system_prompt": "You are a financial analyst. You will be given a small financial table and one question about it. Respond with:\nAnswer: the computed figure or figures the question asks for.\nCommentary: 2-4 sentences explaining what the figures mean and what drove the result.\nUse only the data provided in the table.",
+  "prompt": "Units: GBP k\n\n| Line item | FY2024 | FY2025 |\n|---|---|---|\n| Revenue | 8,000 | 9,200 |\n| Cost of sales | 4,800 | 5,520 |\n| Gross profit | 3,200 | 3,680 |\n| Operating costs | 2,400 | 2,484 |\n| Operating profit | 800 | 1,196 |\n\nQuestion: What happened to operating margin between FY2024 and FY2025, and what drove it?",
+  "response": "**Answer:** Operating margin improved from 10.0% in FY2024 to 13.0% in FY2025, an increase of 300 basis points.\n\n**Commentary:** The operating margin expansion was driven by revenue growing faster than operating costs. Revenue increased by 15% (£1,200k), while operating costs grew by only 3.5% (£84k), demonstrating strong operational leverage. This indicates the company achieved better cost control and efficiency gains, allowing more of each pound of incremental revenue to flow through to operating profit. The 496k improvement in operating profit significantly outpaced the modest increase in operating costs, reflecting improved operational efficiency and scalability.",
+  "input_tokens": 211,
+  "output_tokens": 150
+}

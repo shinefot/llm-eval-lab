@@ -1,0 +1,10 @@
+{
+  "id": "item_07",
+  "model": "claude-haiku-4-5-20251001",
+  "run_at": "2026-09-20T12:28:14.765435+00:00",
+  "system_prompt": "You are a financial analyst. You will be given a small financial table and one question about it. Respond with:\nAnswer: the computed figure or figures the question asks for.\nCommentary: 2-4 sentences explaining what the figures mean and what drove the result.\nUse only the data provided in the table.",
+  "prompt": "Units: GBP k\n\n| Cost line | FY2024 | FY2025 |\n|---|---|---|\n| Salaries | 3,000 | 3,120 |\n| Marketing | 1,000 | 1,450 |\n| Rent | 500 | 510 |\n| Travel | 100 | 120 |\n| Total operating costs | 4,600 | 5,200 |\n\nQuestion: Total operating costs rose between FY2024 and FY2025. What drove the increase?",
+  "response": "Answer: Total operating costs rose by GBP 600k (from GBP 4,600k to GBP 5,200k), representing a 13.0% increase. The increase was driven primarily by Marketing costs, which rose by GBP 450k (45.0% increase), followed by Salaries increasing by GBP 120k (4.0% increase), Travel by GBP 20k (20.0% increase), and Rent by GBP 10k (2.0% increase).\n\nCommentary: Marketing was the dominant cost driver, accounting for 75% of the total GBP 600k increase. This suggests a deliberate strategic investment in marketing activities in FY2025. While Salaries grew at a modest 4%, the Marketing expansion was substantially more aggressive, indicating a shift in resource allocation toward revenue-generating or customer acquisition activities rather than headcount expansion.",
+  "input_tokens": 203,
+  "output_tokens": 203
+}
