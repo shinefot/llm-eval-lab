@@ -1,0 +1,29 @@
+{
+  "id": "item_02",
+  "title": "Free cash flow decline driven by capex",
+  "statement_type": "cash_flow",
+  "difficulty": "baseline",
+  "trap_type": null,
+  "table": {
+    "unit": "GBP k",
+    "columns": ["Line item", "FY2024", "FY2025"],
+    "rows": [
+      ["Operating cash flow", 1200, 1500],
+      ["Capital expenditure", -400, -900],
+      ["Free cash flow", 800, 600]
+    ]
+  },
+  "question": "What happened to free cash flow between FY2024 and FY2025, and what drove it?",
+  "gold_answer": {
+    "key_figures": [
+      {"label": "Free cash flow FY2024", "value": 800, "unit": "GBP k"},
+      {"label": "Free cash flow FY2025", "value": 600, "unit": "GBP k"},
+      {"label": "Change in free cash flow", "value": -25.0, "unit": "%"},
+      {"label": "Operating cash flow growth", "value": 25.0, "unit": "%"},
+      {"label": "Capital expenditure growth", "value": 125.0, "unit": "%"}
+    ],
+    "summary": "Free cash flow fell 25.0%, from GBP 800k to GBP 600k. Operating cash flow actually improved by GBP 300k (+25.0%), but capital expenditure more than doubled, rising GBP 500k (+125.0%), which more than offset it.",
+    "main_driver": "Capital expenditure more than doubled; operating cash generation improved."
+  },
+  "design_note": "Baseline. Tests whether the model separates operating performance (improving) from investment spending (the cause of the decline), rather than describing the fall as a deterioration in the business. The table does not say what the capex was for, so any stated purpose is a grounding failure."
+}

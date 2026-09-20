@@ -1,0 +1,30 @@
+{
+  "id": "item_03",
+  "title": "Customer churn rate increase",
+  "statement_type": "kpi",
+  "difficulty": "baseline",
+  "trap_type": null,
+  "table": {
+    "unit": "customers",
+    "columns": ["KPI", "Q1 2025", "Q2 2025"],
+    "rows": [
+      ["Customers at start of quarter", 2000, 2100],
+      ["New customers", 300, 290],
+      ["Churned customers", 200, 294],
+      ["Customers at end of quarter", 2100, 2096]
+    ]
+  },
+  "question": "What happened to the quarterly churn rate (churned customers divided by customers at start of quarter) between Q1 and Q2 2025, and what does it mean for customer growth?",
+  "gold_answer": {
+    "key_figures": [
+      {"label": "Churn rate Q1 2025", "value": 10.0, "unit": "%"},
+      {"label": "Churn rate Q2 2025", "value": 14.0, "unit": "%"},
+      {"label": "Change in churn rate", "value": 4.0, "unit": "pp"},
+      {"label": "Net customer additions Q1 2025", "value": 100, "unit": "customers"},
+      {"label": "Net customer additions Q2 2025", "value": -4, "unit": "customers"}
+    ],
+    "summary": "Churn rate rose from 10.0% to 14.0%, up 4.0 percentage points, as churned customers increased from 200 to 294. New customer additions were broadly stable (300 to 290), so the rise in churn is what turned net additions from +100 in Q1 to -4 in Q2. The customer base has stopped growing.",
+    "main_driver": "Higher churn, not weaker acquisition: churn accounts for 94 of the 104 swing in net additions."
+  },
+  "design_note": "Baseline. The churn formula is given in the question so there is no definitional ambiguity. Tests whether the model identifies churn rather than acquisition as the driver, and reports the change in percentage points."
+}

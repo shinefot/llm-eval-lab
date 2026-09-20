@@ -1,0 +1,32 @@
+{
+  "id": "item_01",
+  "title": "Operating margin improvement from cost leverage",
+  "statement_type": "pnl",
+  "difficulty": "baseline",
+  "trap_type": null,
+  "table": {
+    "unit": "GBP k",
+    "columns": ["Line item", "FY2024", "FY2025"],
+    "rows": [
+      ["Revenue", 8000, 9200],
+      ["Cost of sales", 4800, 5520],
+      ["Gross profit", 3200, 3680],
+      ["Operating costs", 2400, 2484],
+      ["Operating profit", 800, 1196]
+    ]
+  },
+  "question": "What happened to operating margin between FY2024 and FY2025, and what drove it?",
+  "gold_answer": {
+    "key_figures": [
+      {"label": "Operating margin FY2024", "value": 10.0, "unit": "%"},
+      {"label": "Operating margin FY2025", "value": 13.0, "unit": "%"},
+      {"label": "Change in operating margin", "value": 3.0, "unit": "pp"},
+      {"label": "Gross margin, both years", "value": 40.0, "unit": "%"},
+      {"label": "Revenue growth", "value": 15.0, "unit": "%"},
+      {"label": "Operating cost growth", "value": 3.5, "unit": "%"}
+    ],
+    "summary": "Operating margin rose from 10.0% to 13.0%, up 3.0 percentage points. Gross margin was unchanged at 40.0%, so the whole improvement came from operating costs growing only 3.5% while revenue grew 15.0% (operating costs fell from 30.0% to 27.0% of revenue).",
+    "main_driver": "Operating costs grew far slower than revenue; gross margin did not contribute."
+  },
+  "design_note": "Baseline. Tests whether the model checks gross margin before attributing the improvement, rather than vaguely crediting 'improved profitability'."
+}

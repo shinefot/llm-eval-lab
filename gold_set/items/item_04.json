@@ -1,0 +1,32 @@
+{
+  "id": "item_04",
+  "title": "Profit miss despite revenue beat",
+  "statement_type": "budget_vs_actual",
+  "difficulty": "baseline",
+  "trap_type": null,
+  "table": {
+    "unit": "GBP k",
+    "columns": ["Line item", "Budget FY2025", "Actual FY2025"],
+    "rows": [
+      ["Revenue", 5000, 5300],
+      ["Cost of sales", 3000, 3339],
+      ["Gross profit", 2000, 1961],
+      ["Operating costs", 1400, 1380],
+      ["Operating profit", 600, 581]
+    ]
+  },
+  "question": "Operating profit missed budget even though revenue beat it. Quantify the key variances, state whether each is favourable or adverse, and explain the main driver of the miss.",
+  "gold_answer": {
+    "key_figures": [
+      {"label": "Operating profit variance (adverse)", "value": -19, "unit": "GBP k"},
+      {"label": "Revenue variance (favourable)", "value": 300, "unit": "GBP k"},
+      {"label": "Cost of sales variance (adverse)", "value": 339, "unit": "GBP k"},
+      {"label": "Operating costs variance (favourable)", "value": -20, "unit": "GBP k"},
+      {"label": "Gross margin, budget", "value": 40.0, "unit": "%"},
+      {"label": "Gross margin, actual", "value": 37.0, "unit": "%"}
+    ],
+    "summary": "Operating profit was GBP 19k adverse to budget (-3.2%). Revenue was GBP 300k favourable (+6.0%), but cost of sales was GBP 339k adverse (+11.3%), cutting gross margin from a budgeted 40.0% to 37.0%. Operating costs were GBP 20k favourable, which only partly offset the margin shortfall.",
+    "main_driver": "Cost of sales overran by more than the revenue beat, so gross margin came in 3.0 percentage points below budget."
+  },
+  "design_note": "Baseline. Tests favourable/adverse direction on cost lines, where a positive number is bad news. A response that calls the cost of sales variance favourable, or the operating cost underspend adverse, fails C3."
+}
