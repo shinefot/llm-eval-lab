@@ -1,0 +1,29 @@
+{
+  "id": "item_05",
+  "title": "Days sales outstanding deterioration",
+  "statement_type": "working_capital",
+  "difficulty": "baseline",
+  "trap_type": null,
+  "table": {
+    "unit": "GBP k",
+    "columns": ["Line item", "FY2024", "FY2025"],
+    "rows": [
+      ["Revenue", 7300, 8030],
+      ["Trade receivables at year end", 900, 1320]
+    ]
+  },
+  "question": "Calculate days sales outstanding (year-end trade receivables divided by revenue, multiplied by 365) for both years. What happened, and what does it mean for cash?",
+  "gold_answer": {
+    "key_figures": [
+      {"label": "DSO FY2024", "value": 45.0, "unit": "days"},
+      {"label": "DSO FY2025", "value": 60.0, "unit": "days"},
+      {"label": "Change in DSO", "value": 15.0, "unit": "days"},
+      {"label": "Revenue growth", "value": 10.0, "unit": "%"},
+      {"label": "Receivables growth", "value": 46.7, "unit": "%"},
+      {"label": "Approximate cash tied up by the extra 15 days", "value": 330, "unit": "GBP k"}
+    ],
+    "summary": "DSO rose from 45.0 to 60.0 days, an increase of 15 days. Receivables grew 46.7% while revenue grew only 10.0%, so the increase is not explained by sales growth: customers are taking longer to pay. At FY2025 revenue of about GBP 22k per day, the extra 15 days ties up roughly GBP 330k of cash.",
+    "main_driver": "Collections slowed: receivables grew more than four times faster than revenue."
+  },
+  "design_note": "Baseline. Formula given in the question. Tests whether the model links the ratio to a cash consequence, and whether it rules out revenue growth as the explanation. The table does not say why customers are paying later, so any stated reason is a grounding failure."
+}

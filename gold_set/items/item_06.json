@@ -1,0 +1,31 @@
+{
+  "id": "item_06",
+  "title": "Segment growth masking margin erosion",
+  "statement_type": "segment",
+  "difficulty": "baseline",
+  "trap_type": null,
+  "table": {
+    "unit": "GBP k",
+    "columns": ["Segment", "Revenue FY2024", "Revenue FY2025", "Operating profit FY2024", "Operating profit FY2025"],
+    "rows": [
+      ["Hardware", 6000, 6300, 600, 504],
+      ["Software", 2000, 2600, 520, 780],
+      ["Group total", 8000, 8900, 1120, 1284]
+    ]
+  },
+  "question": "Group operating profit grew. Which segment drove the growth, and is there anything in the segment results that management should be concerned about?",
+  "gold_answer": {
+    "key_figures": [
+      {"label": "Group operating profit growth", "value": 14.6, "unit": "%"},
+      {"label": "Software operating profit growth", "value": 50.0, "unit": "%"},
+      {"label": "Hardware operating profit change", "value": -16.0, "unit": "%"},
+      {"label": "Software margin FY2024", "value": 26.0, "unit": "%"},
+      {"label": "Software margin FY2025", "value": 30.0, "unit": "%"},
+      {"label": "Hardware margin FY2024", "value": 10.0, "unit": "%"},
+      {"label": "Hardware margin FY2025", "value": 8.0, "unit": "%"}
+    ],
+    "summary": "Group operating profit rose GBP 164k (+14.6%) to GBP 1,284k. Software drove all of it: its operating profit rose GBP 260k (+50.0%) on 30.0% revenue growth, with margin improving from 26.0% to 30.0%. Hardware is the concern: its operating profit fell GBP 96k (-16.0%) even though its revenue grew 5.0%, as margin dropped from 10.0% to 8.0%. The group total hides this.",
+    "main_driver": "Software drove more than 100% of group profit growth; hardware profit fell despite higher revenue."
+  },
+  "design_note": "Baseline. Tests whether the model looks beneath a healthy group total. A response that only describes the group-level growth, or does not flag hardware margin erosion, fails C4."
+}

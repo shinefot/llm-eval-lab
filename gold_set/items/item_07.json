@@ -1,0 +1,32 @@
+{
+  "id": "item_07",
+  "title": "Operating cost increase: size versus growth rate",
+  "statement_type": "cost_breakdown",
+  "difficulty": "baseline",
+  "trap_type": null,
+  "table": {
+    "unit": "GBP k",
+    "columns": ["Cost line", "FY2024", "FY2025"],
+    "rows": [
+      ["Salaries", 3000, 3120],
+      ["Marketing", 1000, 1450],
+      ["Rent", 500, 510],
+      ["Travel", 100, 120],
+      ["Total operating costs", 4600, 5200]
+    ]
+  },
+  "question": "Total operating costs rose between FY2024 and FY2025. What drove the increase?",
+  "gold_answer": {
+    "key_figures": [
+      {"label": "Increase in total operating costs", "value": 600, "unit": "GBP k"},
+      {"label": "Total operating cost growth", "value": 13.0, "unit": "%"},
+      {"label": "Marketing increase", "value": 450, "unit": "GBP k"},
+      {"label": "Marketing growth", "value": 45.0, "unit": "%"},
+      {"label": "Marketing share of total increase", "value": 75.0, "unit": "%"},
+      {"label": "Salaries increase", "value": 120, "unit": "GBP k"}
+    ],
+    "summary": "Total operating costs rose GBP 600k (+13.0%) to GBP 5,200k. Marketing accounts for GBP 450k of that, or 75.0% of the increase, growing 45.0%. Salaries added GBP 120k (+4.0%), which is 20.0% of the increase. Rent and travel together added GBP 30k. Travel grew 20.0% but from a small base, so it is immaterial.",
+    "main_driver": "Marketing spend: 75.0% of the total increase."
+  },
+  "design_note": "Baseline, focused on C4 materiality. Two distractors: salaries is the largest line but grew only 4.0%; travel has the second-highest growth rate but adds only GBP 20k. A response that leads with either, or gives all four lines equal weight, fails C4."
+}
