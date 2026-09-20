@@ -1,0 +1,33 @@
+{
+  "id": "item_12",
+  "title": "Mix shift: every product improves but the total declines",
+  "statement_type": "segment",
+  "difficulty": "trap",
+  "trap_type": "misleading_total_mix_effect",
+  "target_criterion": "C3",
+  "table": {
+    "unit": "GBP k",
+    "columns": ["Product", "Revenue FY2024", "Revenue FY2025", "Gross profit FY2024", "Gross profit FY2025"],
+    "rows": [
+      ["Product A (premium)", 6000, 4000, 3000, 2080],
+      ["Product B (budget)", 4000, 8000, 800, 1760],
+      ["Total", 10000, 12000, 3800, 3840]
+    ]
+  },
+  "question": "Total gross margin fell in FY2025. Which product's margin performance is responsible?",
+  "gold_answer": {
+    "key_figures": [
+      {"label": "Total gross margin FY2024", "value": 38.0, "unit": "%"},
+      {"label": "Total gross margin FY2025", "value": 32.0, "unit": "%"},
+      {"label": "Product A margin FY2024", "value": 50.0, "unit": "%"},
+      {"label": "Product A margin FY2025", "value": 52.0, "unit": "%"},
+      {"label": "Product B margin FY2024", "value": 20.0, "unit": "%"},
+      {"label": "Product B margin FY2025", "value": 22.0, "unit": "%"},
+      {"label": "Product B share of revenue FY2024", "value": 40.0, "unit": "%"},
+      {"label": "Product B share of revenue FY2025", "value": 66.7, "unit": "%"}
+    ],
+    "summary": "Neither. Both products improved their margin by 2.0 percentage points (A from 50.0% to 52.0%, B from 20.0% to 22.0%). Total gross margin fell from 38.0% to 32.0%, down 6.0 percentage points, entirely because of sales mix: low-margin Product B doubled its revenue and went from 40.0% to 66.7% of sales, while high-margin Product A's revenue fell by a third. Total gross profit still rose slightly, by GBP 40k.",
+    "main_driver": "Sales mix shifted toward the low-margin product; no product's own margin deteriorated."
+  },
+  "design_note": "Trap. The question presupposes that one product's margin is to blame. Both margins improved; the decline is a pure mix effect. Tests whether the model computes product-level margins before answering and rejects the premise. A response that blames Product B's margin, or either product's margin, fails C3."
+}

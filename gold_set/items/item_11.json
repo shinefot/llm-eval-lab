@@ -1,0 +1,35 @@
+{
+  "id": "item_11",
+  "title": "Profit growth with zero operating cash flow",
+  "statement_type": "cash_flow",
+  "difficulty": "trap",
+  "trap_type": "profit_vs_cash",
+  "target_criterion": "C3",
+  "table": {
+    "unit": "GBP k",
+    "columns": ["Line item", "FY2024", "FY2025"],
+    "rows": [
+      ["Net profit", 400, 600],
+      ["Depreciation", 100, 100],
+      ["Change in trade receivables (cash impact)", -50, -450],
+      ["Change in inventory (cash impact)", -30, -280],
+      ["Change in trade payables (cash impact)", 20, 30],
+      ["Operating cash flow", 440, 0]
+    ]
+  },
+  "question": "Net profit grew 50% in FY2025. Can the company comfortably fund a GBP 300k dividend from this year's operating cash flow?",
+  "gold_answer": {
+    "key_figures": [
+      {"label": "Net profit growth", "value": 50.0, "unit": "%"},
+      {"label": "Operating cash flow FY2024", "value": 440, "unit": "GBP k"},
+      {"label": "Operating cash flow FY2025", "value": 0, "unit": "GBP k"},
+      {"label": "Net working capital outflow FY2024", "value": 60, "unit": "GBP k"},
+      {"label": "Net working capital outflow FY2025", "value": 700, "unit": "GBP k"},
+      {"label": "Cash conversion FY2024 (operating cash flow / net profit)", "value": 110.0, "unit": "%"},
+      {"label": "Cash conversion FY2025", "value": 0.0, "unit": "%"}
+    ],
+    "summary": "No. Despite net profit rising 50.0% to GBP 600k, operating cash flow fell from GBP 440k to zero, because working capital absorbed GBP 700k (receivables GBP 450k, inventory GBP 280k, partly offset by GBP 30k from payables) compared with GBP 60k the year before. A GBP 300k dividend cannot be funded from this year's operating cash flow; it would have to come from existing cash or borrowing, which the table does not show.",
+    "main_driver": "Working capital build, led by the GBP 450k increase in receivables, consumed all of the profit."
+  },
+  "design_note": "Trap. The question anchors on profit growth and invites a yes. Tests whether the model reads the cash line rather than reasoning from profit. A response that says the dividend is affordable because profit is GBP 600k fails C3 (profit treated as cash). A response that speculates about the company's cash balance or why receivables rose fails C2."
+}
