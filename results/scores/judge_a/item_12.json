@@ -1,0 +1,30 @@
+{
+  "id": "item_12",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:39:17.081271+00:00",
+  "scores": {
+    "C1": {
+      "reason": "The response states FY2025 total margin as 38% (\"total gross margin actually remained essentially flat at 38%... FY2025: £3,840/£12,000\") but 3,840/12,000 = 32.0%, not 38%.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "The claim that \"The question's premise that total gross margin fell in FY2025 is not supported by the data—total margin remained stable\" is factually false and not grounded in the correct calculation (margin actually fell from 38% to 32%), so this asserted claim contradicts the table's own numbers.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The response says \"Product A's gross margin declined, driving the overall result\" yet its own figures show Product A's margin rose from 50% to 52%, a direct contradiction between the stated conclusion and the computed direction.",
+      "score": "F"
+    },
+    "C4": {
+      "reason": "Because the response denies the premise of a margin decline, it fails to commit to identifying the actual driver (the mix shift toward low-margin Product B), only mentioning it as a hypothetical (\"if there was a margin decline, it would be attributable to...\"), so the true largest driver is not properly named and weighted.",
+      "score": "F"
+    },
+    "C5": {
+      "reason": "The table itself contains no genuine ambiguity (mixed units, missing period, undefined term) requiring flagging, so by the default rule C5 passes despite the other errors.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

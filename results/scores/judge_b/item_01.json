@@ -1,0 +1,30 @@
+{
+  "id": "item_01",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:35:05.834313+00:00",
+  "scores": {
+    "C1": {
+      "reason": "Operating profit rose 1,196 − 800 = £396k, but the response states \"The 496k improvement in operating profit\"; margins (10.0%, 13.0%, 300bp), revenue +15% (£1,200k) and opex +3.5% (£84k) are otherwise correct.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All causal claims (revenue outgrowing operating costs, cost control/operating leverage) restate relationships directly computable from the table, with no external facts introduced.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The correct measure is used and the change is correctly expressed as 300 basis points (percentage points), not a percentage change, and the direction is right.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary leads with and gives most weight to the true driver — operating costs growing 3.5% against 15% revenue growth (operating leverage).",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no mixed units, missing periods or one-off items, so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

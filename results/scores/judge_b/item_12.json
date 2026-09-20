@@ -1,0 +1,30 @@
+{
+  "id": "item_12",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:42:03.493105+00:00",
+  "scores": {
+    "C1": {
+      "reason": "FY2025 total margin is 3,840/12,000 = 32.0%, not the stated \"essentially flat at 38%\", and Product A's margin is stated as falling \"from 50% ... to 52%\", which is a rise of 2.0pp.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All cited figures and the mix-shift observation (Product B from 40% to 67% of revenue) are drawn from the table, with no external causes asserted.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "Direction is inverted: \"Product A's gross margin declined, driving the overall result\" when its own quoted figures show 50% rising to 52%, and the fall in total margin is denied outright.",
+      "score": "F"
+    },
+    "C4": {
+      "reason": "The actual driver, the revenue mix shift to low-margin Product B, is demoted to a conditional aside (\"if there was a margin decline\"), while the wrong attribution to Product A leads the answer.",
+      "score": "F"
+    },
+    "C5": {
+      "reason": "The table contains no mixed units, missing period or one-off item, so C5 defaults to Pass; the spurious premise challenge stems from the arithmetic error already penalised under C1.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

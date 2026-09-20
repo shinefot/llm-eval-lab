@@ -1,0 +1,30 @@
+{
+  "id": "item_04",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:39:54.512042+00:00",
+  "scores": {
+    "C1": {
+      "reason": "All figures recomputed correctly: revenue +300 (6.0%), cost of sales 339 adverse (11.3%), gross profit -39, operating costs +20 favourable, operating profit -19.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "Every number traces to the table, and the causal speculation is hedged as a hypothesis list (\"likely driven by unfavorable product mix, higher input costs, or manufacturing inefficiencies\") rather than asserted as fact.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "Favourable/adverse labels are correctly assigned and the sign convention is consistent; margin deterioration is interpreted in the right direction.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The £339k cost of sales overrun is explicitly named as the main driver and given the most weight, with the £20k operating cost saving correctly treated as minor.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no mixed units, missing periods or one-off items, so C5 defaults to Pass.",
+      "score": "P"
+    }
+  },
+  "verdict": "Pass"
+}

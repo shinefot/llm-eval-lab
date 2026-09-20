@@ -1,0 +1,30 @@
+{
+  "id": "item_09",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:41:04.646517+00:00",
+  "scores": {
+    "C1": {
+      "reason": "FY2025 margin is 5,016/13,200 = 38.0% and the change is -2.0pp; the stated 38.1% and 1.9pp are each at the edge of the ±0.1pp tolerance, and revenue growth (10.0%) and cost of sales growth (13.7%) are correct.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "Asserts causes absent from the table: \"indicating rising input costs or manufacturing inefficiencies that were not fully offset by pricing power\" and \"supply chain inflation or competitive pricing constraints\".",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "Gross margin is computed on revenue, the decline is correctly expressed in percentage points, and the direction (deterioration) is right.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "Names the dominant driver with most weight: \"cost of sales increasing at a faster rate (13.7% growth) than revenue\".",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table mixes units (revenue in GBP m, cost of sales in GBP k) and the response silently converts without flagging the mismatch or stating the assumption.",
+      "score": "F"
+    }
+  },
+  "verdict": "Send back"
+}

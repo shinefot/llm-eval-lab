@@ -1,0 +1,30 @@
+{
+  "id": "item_04",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:36:41.221682+00:00",
+  "scores": {
+    "C1": {
+      "reason": "All stated figures (revenue +300, cost of sales -339, gross profit -39, operating costs +20, operating profit -19, 11.3% cost of sales overrun) match the gold computations exactly.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "The claim \"likely driven by unfavorable product mix, higher input costs, or manufacturing inefficiencies\" introduces causes not present in or derivable from the table, and is not clearly flagged as an unverified hypothesis (e.g., \"the data does not show why\").",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The response correctly applies variance analysis, labels favourable/adverse correctly, and correctly identifies that the revenue gain was outweighed by the cost of sales overrun.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary correctly leads with and emphasizes the cost of sales overrun as the main driver of the operating profit miss, matching the gold's materiality assessment.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "There is no missing period, mixed unit, or one-off item in the table requiring flagging, so the default pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item_08",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:40:49.348833+00:00",
+  "scores": {
+    "C1": {
+      "reason": "Underlying FY2025 profit is 495 − 250 = 245k, a fall of 18.3%, not \"improved from £300k to £395k\" / \"£95k, representing a 31.7% increase\".",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "Claims \"a reduction in operating costs as a percentage of sales\" when costs rose from 90.0% to 92.0% of revenue, a claim contradicted by the table.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "Direction is inverted: the one-off is effectively only partly removed and a deterioration is presented as \"solid operational leverage\", the opposite of what the data shows.",
+      "score": "F"
+    },
+    "C4": {
+      "reason": "The commentary does name the £250k one-off property gain as the dominant factor in the headline movement and gives it the most weight.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The one-off gain is explicitly flagged as non-recurring and an attempt is made to strip it out rather than silently ignoring it.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

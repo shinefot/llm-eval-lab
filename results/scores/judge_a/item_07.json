@@ -1,0 +1,30 @@
+{
+  "id": "item_07",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:37:39.196570+00:00",
+  "scores": {
+    "C1": {
+      "reason": "All stated figures (total increase 600k/13.0%, marketing 450k/45.0%, salaries 120k/4.0%, travel 20k/20.0%, rent 10k/2.0%) match the recomputed values from the table.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "The claim that the marketing rise \"suggests a deliberate strategic investment\" and \"indicat[es] a shift in resource allocation toward revenue-generating or customer acquisition activities rather than headcount expansion\" asserts a cause not shown anywhere in the table.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The correct concepts (absolute change, percentage growth, share of total increase) are applied and interpreted correctly, with marketing correctly identified as the dominant driver.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly leads with Marketing as the dominant driver (75% of the increase) and gives it the most weight, consistent with the data.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no one-off items, missing periods, or undefined terms, so no flagging is required.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

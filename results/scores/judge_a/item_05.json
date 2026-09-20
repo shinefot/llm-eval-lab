@@ -1,0 +1,30 @@
+{
+  "id": "item_05",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:37:05.599891+00:00",
+  "scores": {
+    "C1": {
+      "reason": "The response states FY2025 DSO as 59.9 days, but 1,320/8,030 × 365 = 481,800/8,030 = exactly 60.0 days, so \"59.9 days\" is an incorrect figure.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All numbers trace to the table and the causal claims (\"either extended payment terms... or collection performance has deteriorated\") are explicitly hedged as alternatives rather than asserted as fact.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "DSO is correctly computed and correctly interpreted as a negative development for cash (longer collection period ties up working capital).",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary correctly identifies receivables growing far faster than revenue (47% vs 10%) as the main driver of the DSO increase, matching the gold answer's main driver.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no missing periods, mixed units, or one-off items requiring flagging, so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

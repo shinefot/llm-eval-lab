@@ -1,0 +1,30 @@
+{
+  "id": "item_10",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:41:19.356944+00:00",
+  "scores": {
+    "C1": {
+      "reason": "The commentary's decomposition figure is wrong: conversion on the original base gives 500,000 × 0.5pp = 2,500 orders, not \"approximately 1,000 additional orders\".",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All figures and causes are drawn from the table (visitors, orders) with no external drivers asserted.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The driver conclusion is inverted — conversion contributed 2,500 orders versus traffic's 2,000, yet the response states \"Traffic contributed more to order growth... a substantially larger impact\".",
+      "score": "F"
+    },
+    "C4": {
+      "reason": "The commentary gives most weight to traffic, which is not the largest contributor to the 5,000-order increase.",
+      "score": "F"
+    },
+    "C5": {
+      "reason": "The table contains no mixed units, missing periods or one-off items, so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

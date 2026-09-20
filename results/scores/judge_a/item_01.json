@@ -1,0 +1,30 @@
+{
+  "id": "item_01",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:30:45.916462+00:00",
+  "scores": {
+    "C1": {
+      "reason": "The response states \"The 496k improvement in operating profit\" but operating profit rose from 800 to 1,196, a change of only 396k, not 496k.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All numbers (10.0%, 13.0%, revenue +15%/£1,200k, opex +3.5%/£84k) and the claim that opex growing slower than revenue drove the margin expansion are directly computable from the table; no external causes are introduced.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The correct concept (operating margin, revenue vs. cost growth) is applied and the basis-point/percentage-point conversion (300bps = 3.0pp) is correctly handled.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly identifies operating costs growing far slower than revenue as the driver of margin expansion and gives it the most weight, matching the largest driver in the data.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no one-off items, missing periods, or undefined terms requiring flagging, so this defaults to Pass.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

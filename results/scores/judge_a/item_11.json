@@ -1,0 +1,30 @@
+{
+  "id": "item_11",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:38:59.262973+00:00",
+  "scores": {
+    "C1": {
+      "reason": "The response states \"a dramatic GBP 730k increase in working capital outflows (trade receivables up GBP 450k and inventory up GBP 280k)\" but ignores the GBP 30k favorable payables impact, so the true net working-capital outflow is GBP 700k, not GBP 730k.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "The claim that the deterioration \"reflects severe working capital management issues—likely rapid business growth or inventory buildup\" asserts specific causes not shown in the table and is not clearly framed as a labelled hypothesis.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The response correctly applies operating cash flow (not net profit) as the basis for judging dividend affordability and correctly concludes the dividend cannot be comfortably funded.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly leads with the largest driver, the GBP 450k increase in trade receivables, alongside the GBP 280k inventory increase, matching the table's largest contributors.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "There is no unflagged one-off item, mixed unit, or missing data issue in this table that the response fails to address, so the default pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

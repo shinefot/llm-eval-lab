@@ -1,0 +1,30 @@
+{
+  "id": "item_06",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:37:27.305645+00:00",
+  "scores": {
+    "C1": {
+      "reason": "The response states Software had \"a 50% revenue increase,\" but actual revenue growth for Software is (2,600-2,000)/2,000 = 30%, not 50%.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "The causes for Hardware's margin decline (\"suggesting rising costs, pricing pressure, or operational inefficiencies\") are framed as plausible hypotheses rather than asserted facts, and all cited figures trace to the table.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The correct concepts (margin, revenue growth, operating profit growth) are applied and interpreted in the right direction (e.g., Hardware margin correctly identified as falling, Software correctly identified as improving).",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly leads with Software as the main driver and gives appropriate weight to Hardware's profit decline as the concern, matching the largest drivers in the data.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "There is no ambiguous item (one-off, missing period, undefined term) in the table, so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

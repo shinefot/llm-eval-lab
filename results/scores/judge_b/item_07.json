@@ -1,0 +1,30 @@
+{
+  "id": "item_07",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:40:37.131052+00:00",
+  "scores": {
+    "C1": {
+      "reason": "Every figure checks out: +600k total (+13.0%), Marketing +450k (+45.0%), Salaries +120k (+4.0%), Travel +20k (+20.0%), Rent +10k (+2.0%), and Marketing = 75% of the increase.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "Claims are hedged (\"suggests\", \"indicating\") and the shift away from headcount toward marketing is directly visible in the table, so no unsupported cause is asserted as fact.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "Correct use of percentage growth per line and share-of-increase attribution, with directions stated correctly.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "Leads with Marketing as the dominant driver at 75% of the GBP 600k increase and correctly relegates Rent and Travel.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table is internally consistent (component lines sum to the stated totals in both years) with no mixed units, missing periods or one-offs, so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Pass"
+}

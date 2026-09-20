@@ -1,0 +1,30 @@
+{
+  "id": "item_09",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:38:11.348276+00:00",
+  "scores": {
+    "C1": {
+      "reason": "FY2025 margin computes to exactly 38.0% (5,016/13,200) and the change is exactly 2.0pp; the model's stated 38.1% and 1.9pp are within the +/-0.1pp tolerance boundary, so this passes.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "The commentary asserts unsupported causes as near-fact: \"indicating rising input costs or manufacturing inefficiencies\" and \"could signal margin pressure from supply chain inflation or competitive pricing constraints\" — none of this appears in the table, and it is not clearly flagged as speculative.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The correct margin concept is applied and the decline is correctly interpreted as adverse, with cost of sales outgrowing revenue identified as the mechanism.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly identifies cost of sales growing faster than revenue as the main driver and gives it primary emphasis.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table mixes units (revenue in GBP m, cost of sales in GBP k) but the response never flags this, silently converting without stating the assumption as the gold answer does.",
+      "score": "F"
+    }
+  },
+  "verdict": "Send back"
+}

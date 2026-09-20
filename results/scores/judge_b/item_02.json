@@ -1,0 +1,30 @@
+{
+  "id": "item_02",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:39:31.503013+00:00",
+  "scores": {
+    "C1": {
+      "reason": "Stated figures £200k, £800k→£600k, −25%, +£500k and +25% are correct, but \"Capital expenditure nearly doubled from £400k to £900k\" misstates a 2.25x rise (+125%) as under a doubling, understating the key driver.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All numbers and the stated cause (higher capex offsetting better operating cash flow) are visible in or directly computable from the table, with no invented external causes.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "Correct concepts applied: FCF change expressed as a 25% relative decline, with operating inflow improvement correctly netted against increased capex outflow.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary leads with the capital expenditure increase (+£500k) as the driver and correctly weights it against the +£300k operating cash flow gain.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no mixed units, missing periods or one-off items requiring flagging, so C5 passes by default.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

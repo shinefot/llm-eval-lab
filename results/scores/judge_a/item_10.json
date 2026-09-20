@@ -1,0 +1,30 @@
+{
+  "id": "item_10",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:38:29.771008+00:00",
+  "scores": {
+    "C1": {
+      "reason": "The response's decomposition math is incorrect: it states conversion improvement \"on the original visitor base contributed approximately 1,000 additional orders,\" but 500,000 × (2.5%-2.0%) = 2,500 orders, and the standard growth decomposition gives a conversion effect of 3,000 orders (600,000 × 0.5%) versus a traffic effect of 2,000 orders (100,000 × 2.0%) — the stated 1,000 figure is wrong.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All the intermediate numbers used (visitor counts, order counts, percentages) are taken directly from or computed from the table, with no outside facts introduced.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The response concludes \"Traffic contributed more to order growth\" and that \"traffic growth...was the dominant driver,\" but the correct decomposition (600,000×0.5% = 3,000 vs 100,000×2.0% = 2,000) shows conversion contributed more, matching the gold answer's opposite conclusion — this is a conceptual error in attributing growth drivers.",
+      "score": "F"
+    },
+    "C4": {
+      "reason": "The commentary explicitly leads with and emphasizes traffic as \"the dominant driver\" and states it \"had a substantially larger impact,\" which misidentifies the actual largest contributor (conversion, per the correct math), so it fails to surface what actually matters.",
+      "score": "F"
+    },
+    "C5": {
+      "reason": "The table contains no missing periods, one-off items, or undefined terms requiring flagging, so this criterion defaults to Pass.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "item_02",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:36:15.464643+00:00",
+  "scores": {
+    "C1": {
+      "reason": "All stated figures (FCF 800→600k, -25%; capex 400→900k, +500k; OCF +300k, +25%) match the table exactly; \"nearly doubled\" is a loose descriptor but no explicit numeric figure is wrong.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "Every number and the stated cause (capex increase offsetting OCF improvement) is directly computable from the table with no invented data.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The response correctly distinguishes the favorable OCF trend from the unfavorable capex trend and correctly attributes the net FCF decline to capex outpacing OCF gains.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary correctly identifies the capex increase as the dominant driver and gives it the most weight over the OCF improvement.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no ambiguous items (no one-offs, missing periods, or mixed units), so the default pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Pass"
+}

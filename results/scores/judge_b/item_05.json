@@ -1,0 +1,30 @@
+{
+  "id": "item_05",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:40:14.632698+00:00",
+  "scores": {
+    "C1": {
+      "reason": "FY2025 DSO is exactly 60.0 days (1,320/8,030×365 = 60.0, since 8,030/365 = 22.0), but the response states \"(1,320 / 8,030) × 365 = 59.9 days\", an incorrectly computed headline figure.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All figures (£730k, 10%, £420k, 47%) are computable from the table, and the causes are hedged as possibilities (\"suggesting either extended payment terms... or collection performance has deteriorated\").",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "Correct concept applied: DSO expressed in days, change stated as ~15 days (not a percentage), and rising DSO correctly interpreted as cash tied up in working capital.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary leads with the key driver — receivables up 47% against revenue up only 10% — giving it the most weight.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no mixed units, missing periods or one-off items, so C5 defaults to Pass.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

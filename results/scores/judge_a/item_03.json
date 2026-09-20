@@ -1,0 +1,30 @@
+{
+  "id": "item_03",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:36:27.708503+00:00",
+  "scores": {
+    "C1": {
+      "reason": "All stated figures (10.0%, 14.0%, 4.0pp, 300 vs 290, 200 vs 294, 2,100 vs 2,096) match the correct calculations from the table.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "The claim \"This trend suggests underlying customer satisfaction or product-market fit issues that need immediate attention\" asserts a cause not supported by the table, which contains no data on customer satisfaction or product-market fit.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "Churn is correctly calculated and interpreted as rising, correctly linked to the swing from net growth to net decline, with correct directional interpretation.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly identifies churn (not weaker acquisition) as the main driver, noting new customer additions were stable while churn rose sharply, matching the largest driver in the data.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no ambiguous items (no one-off charges, missing periods, or undefined terms), so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

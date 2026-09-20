@@ -1,0 +1,30 @@
+{
+  "id": "item_06",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:40:25.693824+00:00",
+  "scores": {
+    "C1": {
+      "reason": "Software revenue rose from 2,000 to 2,600, i.e. 30%, but the response states a \"50% revenue increase\"; other figures (£164k, £260k, -£96k, 10%→8%) are correct.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "Figures otherwise trace to the table and the causes (\"rising costs, pricing pressure, or operational inefficiencies\") are hedged as possibilities rather than asserted as fact.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "Correct concepts applied: Software identified as driver of more than all group growth, margin expressed correctly as 10% to 8% compression despite revenue growth.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "Leads with Software as the driver of the £164k increase and gives due weight to the Hardware profit decline as the concern.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "No mixed units, missing periods or one-off items in the table; the response also notes the group total masks the Hardware issue.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

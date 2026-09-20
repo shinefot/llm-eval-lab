@@ -1,0 +1,30 @@
+{
+  "id": "item_11",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:41:42.851727+00:00",
+  "scores": {
+    "C1": {
+      "reason": "The \"GBP 730k increase in working capital outflows\" is wrong: the FY2025 net working capital outflow is GBP 700k (450+280 less 30 payables) and the year-on-year increase is GBP 640k, not 730.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "Figures and the receivables/inventory drivers come from the table, and the causal explanation is hedged (\"likely rapid business growth or inventory buildup\") rather than asserted as fact.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "Correctly separates profit from cash, reads the direction right, and concludes the dividend cannot be funded from FY2025 operating cash flow.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary leads with the working capital build and names the GBP 450k receivables movement as the largest component.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "It silently equates operating cash flow with total funds available — \"there is zero cash available for dividend distribution\" — without flagging that the table shows no cash balance or financing lines.",
+      "score": "F"
+    }
+  },
+  "verdict": "Fail"
+}

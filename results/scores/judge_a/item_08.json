@@ -1,0 +1,30 @@
+{
+  "id": "item_08",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_file": "annotation_guidelines_v1.md",
+  "scored_at": "2026-09-20T13:37:54.984708+00:00",
+  "scores": {
+    "C1": {
+      "reason": "Model states underlying operating profit as £395k (31.7% increase), but 495-250=245k, an 18.3% decrease; the \"£95k / 31.7%\" figures are wrong.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "The claim \"driven by...a reduction in operating costs as a percentage of sales\" contradicts the table, where operating costs rose from £2,700k to £2,815k (a rising, not falling, cost ratio).",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The response concludes underlying operating profit \"improved\" and shows \"solid operational leverage,\" but correctly stripping the one-off gain shows underlying profit fell from £300k to £245k — the direction of the underlying trend is reversed.",
+      "score": "F"
+    },
+    "C4": {
+      "reason": "The response correctly identifies the one-off property gain as the dominant factor separating reported from underlying performance, giving it appropriate weight in the commentary.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The one-off gain is explicitly flagged and excluded from the underlying calculation, matching the expected handling of this ambiguity even though the resulting number is wrong.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}
