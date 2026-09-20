@@ -1,0 +1,30 @@
+{
+  "id": "item_10",
+  "title": "Percent versus percentage points on a small rate",
+  "statement_type": "kpi",
+  "difficulty": "trap",
+  "trap_type": "percent_vs_percentage_points",
+  "target_criterion": "C3",
+  "table": {
+    "unit": "count",
+    "columns": ["KPI", "FY2024", "FY2025"],
+    "rows": [
+      ["Website visitors", 500000, 600000],
+      ["Orders", 10000, 15000]
+    ]
+  },
+  "question": "By how much did the conversion rate (orders divided by visitors) improve, and which contributed more to order growth: traffic or conversion?",
+  "gold_answer": {
+    "key_figures": [
+      {"label": "Conversion rate FY2024", "value": 2.0, "unit": "%"},
+      {"label": "Conversion rate FY2025", "value": 2.5, "unit": "%"},
+      {"label": "Change in conversion rate", "value": 0.5, "unit": "pp"},
+      {"label": "Relative improvement in conversion rate", "value": 25.0, "unit": "%"},
+      {"label": "Visitor growth", "value": 20.0, "unit": "%"},
+      {"label": "Order growth", "value": 50.0, "unit": "%"}
+    ],
+    "summary": "Conversion rate rose from 2.0% to 2.5%: an increase of 0.5 percentage points, which is a 25.0% relative improvement. Visitors grew 20.0%. Orders grew 50.0% (1.20 x 1.25 = 1.50), so conversion contributed slightly more than traffic.",
+    "main_driver": "Conversion improvement (25.0% relative) contributed more than traffic growth (20.0%)."
+  },
+  "design_note": "Trap. With a small base rate, the gap between 0.5 percentage points and 25% relative is large, and the wrong label changes the business conclusion. A response saying conversion 'improved by 0.5%' fails C3, and will likely also conclude that traffic was the bigger driver, which is wrong. A response must label the change unambiguously as percentage points, relative percent, or both."
+}

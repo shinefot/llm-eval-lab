@@ -1,0 +1,29 @@
+{
+  "id": "item_09",
+  "title": "Mixed units within one table",
+  "statement_type": "pnl",
+  "difficulty": "trap",
+  "trap_type": "mixed_units",
+  "target_criterion": "C5",
+  "table": {
+    "unit": "GBP k unless stated",
+    "columns": ["Line item", "FY2024", "FY2025"],
+    "rows": [
+      ["Revenue (GBP m)", 12.0, 13.2],
+      ["Cost of sales", 7200, 8184]
+    ]
+  },
+  "question": "Calculate gross margin for both years and explain the change.",
+  "gold_answer": {
+    "key_figures": [
+      {"label": "Gross margin FY2024", "value": 40.0, "unit": "%"},
+      {"label": "Gross margin FY2025", "value": 38.0, "unit": "%"},
+      {"label": "Change in gross margin", "value": -2.0, "unit": "pp"},
+      {"label": "Revenue growth", "value": 10.0, "unit": "%"},
+      {"label": "Cost of sales growth", "value": 13.7, "unit": "%"}
+    ],
+    "summary": "Revenue is stated in GBP m and cost of sales in GBP k, so revenue must be converted (GBP 12,000k and GBP 13,200k) before calculating. Gross margin fell from 40.0% to 38.0%, down 2.0 percentage points, because cost of sales grew 13.7% while revenue grew 10.0%.",
+    "main_driver": "Cost of sales grew faster than revenue."
+  },
+  "design_note": "Trap. Tests two things: whether the model converts units correctly (C1), and whether it tells the reader it did so (C5). A response with the right margins that never mentions the unit mismatch fails C5, because the reader cannot tell whether the conversion was deliberate or lucky."
+}
