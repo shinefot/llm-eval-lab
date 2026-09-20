@@ -1,0 +1,35 @@
+{
+  "id": "item_10",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:06:36.420578+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "The conversion rate improvement is correctly given as 0.5 percentage points (2.0% → 2.5%) with a 25% relative improvement, matching the gold answer.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "\"the conversion improvement on the original visitor base contributed approximately 1,000 additional orders\" is wrong — 500,000 × 0.5pp = 2,500 orders.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All stated facts (visitors, orders, growth rates, decomposition) derive from the table; no outside causes are asserted.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "\"Traffic contributed more to order growth\" is contradicted by the data, since the conversion effect (2,500 orders, 25% relative) exceeds the traffic effect (2,000 orders, 20%).",
+      "score": "F"
+    },
+    "C4": {
+      "reason": "The commentary directly addresses and quantifies the drivers of order growth rather than narrating each line equally; the misidentification of the larger driver is already scored under C3.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "No mixed units, missing periods or one-off items are present, and the response acknowledges the residual interaction (\"the remaining growth from conversion on new traffic\"), so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

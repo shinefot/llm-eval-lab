@@ -1,0 +1,35 @@
+{
+  "id": "item_09",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:03:05.671562+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "FY2024 margin 40.0% and FY2025 margin 38.1% (true value 38.0%) both within the ±0.1 tolerance, so the headline figures pass.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "The stated 1.9pp change is off by only 0.1pp from the correct 2.0pp, which is within tolerance.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "\"indicating rising input costs or manufacturing inefficiencies\" and \"could signal margin pressure from supply chain inflation or competitive pricing constraints\" introduce outside causes not supported by the table, and hedge words like \"could signal\" are not sufficient per the guidelines.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The correct margin concept is applied and the direction of change (decline) matches the data.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly identifies cost of sales growing faster than revenue as the main driver and gives it the most weight.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The response never flags that revenue is stated in GBP m while cost of sales is in GBP k, silently converting without stating the assumption.",
+      "score": "F"
+    }
+  },
+  "verdict": "Send back"
+}

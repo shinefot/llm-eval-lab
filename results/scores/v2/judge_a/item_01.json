@@ -1,0 +1,35 @@
+{
+  "id": "item_01",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:01:01.620241+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "Operating margin figures (10.0% to 13.0%, +300bps) match the gold answer exactly.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "The response states \"The 496k improvement in operating profit\" but the actual change is 1,196 - 800 = 396k, not 496k.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "Claims of \"operational leverage,\" \"cost control and efficiency gains,\" and \"scalability\" are descriptive interpretations of the revenue/cost growth pattern shown in the table, not unverifiable outside facts.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The correct margin concept is applied, the percentage-point vs percentage distinction is handled correctly (300 basis points), and the direction of improvement matches the data.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly identifies operating costs growing much slower than revenue as the main driver, matching the gold answer's key driver.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "There are no one-off items, missing periods, or undefined terms in this table requiring flagging, so the default pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

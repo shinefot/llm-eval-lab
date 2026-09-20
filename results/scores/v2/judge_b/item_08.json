@@ -1,0 +1,35 @@
+{
+  "id": "item_08",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:06:02.655345+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "Underlying FY2025 operating profit is 495 − 250 = £245k, a 18.3% fall, not \"£95k, representing a 31.7% increase\".",
+      "score": "F"
+    },
+    "C1b": {
+      "reason": "The other stated figures — \"£195k (from £300k to £495k)\", the \"£250k\" one-off, and \"revenue growth of £60k (2%)\" — are all correct; the £395k slip is the same defect already scored under C1a.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "No causes or facts from outside the table are introduced; the one-off gain and revenue growth both come from the data.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The table shows operating costs rising from 90.0% to 92.0% of revenue, so \"a reduction in operating costs as a percentage of sales\" and \"demonstrates solid operational leverage\" are directionally contradicted by the data.",
+      "score": "F"
+    },
+    "C4": {
+      "reason": "The commentary leads with and gives most weight to the £250k one-off property gain as the reason reported profit jumped, which is the dominant item.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The one-off gain is explicitly identified as non-recurring and the response states it is stripping it out before assessing underlying performance.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item_07",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:02:18.361654+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "The headline figures (total increase of GBP 600k, 13.0%, and marketing as primary driver) match the gold answer.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "All supporting figures (Marketing +450k/45.0%, Salaries +120k/4.0%, Travel +20k/20.0%, Rent +10k/2.0%) are correctly computed from the table.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "\"This suggests a deliberate strategic investment in marketing activities in FY2025... indicating a shift in resource allocation toward revenue-generating or customer acquisition activities rather than headcount expansion\" introduces a cause (strategic intent) not supported by the table, and the hedge word \"suggests\" does not make it acceptable.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The correct concept (driver analysis via absolute and percentage change) is applied correctly and the direction of the conclusion follows the data.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly identifies Marketing as the dominant driver at 75% of the increase and gives it the most weight, mentioning Salaries, Travel, and Rent as secondary.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "There is no ambiguity, missing period, or one-off item in the table that needed flagging, so the default pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

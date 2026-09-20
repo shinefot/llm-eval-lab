@@ -1,0 +1,35 @@
+{
+  "id": "item_12",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:04:20.277817+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "The response's headline conclusion \"Product A's gross margin declined, driving the overall result\" is wrong — Product A's margin rose from 50% to 52%, and the correct driver is neither product's margin but the sales mix shift toward budget Product B.",
+      "score": "F"
+    },
+    "C1b": {
+      "reason": "The response states \"the total gross margin actually remained essentially flat at 38% (FY2024: £3,800/£10,000 vs FY2025: £3,840/£12,000)\" but £3,840/£12,000 = 32.0%, not 38%, an incorrect supporting figure.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "No facts or causes from outside the table are introduced; the mix-shift explanation and all figures cited are derived from the table itself.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The response claims \"Product A's margin fell from 50% ... to 52%\" (calling an increase a decline) and asserts total margin \"remained essentially flat\" when the data shows a genuine fall from 38.0% to 32.0%, both of which contradict the direction shown by the data.",
+      "score": "F"
+    },
+    "C4": {
+      "reason": "The correct driver (sales mix shift toward low-margin Product B) is relegated to a hedged afterthought (\"However, if there was a margin decline, it would be attributable to...\") after the response first wrongly names Product A's own margin decline as the cause, so the true driver is not given appropriate weight.",
+      "score": "F"
+    },
+    "C5": {
+      "reason": "There is no genuine ambiguity, one-off item, or missing information in this table requiring flagging, so the default applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

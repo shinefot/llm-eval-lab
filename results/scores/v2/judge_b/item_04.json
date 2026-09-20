@@ -1,0 +1,35 @@
+{
+  "id": "item_04",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:05:02.197608+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "Revenue +£300k favourable, cost of sales £339k adverse, and operating profit -£19k adverse all match the gold answer.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "Supporting figures check out: gross profit -£39k, operating costs +£20k favourable, £339k = 11.3% of £3,000k, £300k = 6% of £5,000k, and £600k budgeted operating profit.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "The response attributes the cost overrun to causes not in the table — \"likely driven by unfavorable product mix, higher input costs, or manufacturing inefficiencies\" — with only a hedge word rather than stating the data does not show the cause.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "Variances are correctly signed and classified, and the conclusion that gross margin deterioration (not opex) caused the miss follows from the data.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The £339k cost of sales overrun is explicitly named as the main driver and given the most weight, with the £20k opex saving correctly treated as minor.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no one-off items, mixed units or missing periods, and the question is fully answerable from the data, so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

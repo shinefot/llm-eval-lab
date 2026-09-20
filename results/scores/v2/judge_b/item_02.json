@@ -1,0 +1,35 @@
+{
+  "id": "item_02",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:04:43.145870+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "Free cash flow fell by £200k from £800k to £600k, a 25% decrease — matches the gold answer exactly.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "The verbal quantifier \"Capital expenditure nearly doubled from £400k to £900k\" misstates a 125% increase (2.25x), which is more than doubled, not nearly doubled; other figures (+£500k, +£300k, +25%) are correct.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All claims (capex rise, operating cash flow improvement, cash consumed by investment) are drawn from or directly computable from the table, with no external causes asserted.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The response correctly treats FCF as operating cash flow less capex, applies the percentage change properly, and reads the direction correctly.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary leads with capital expenditure as the driver and explicitly contrasts the £500k capex rise against the £300k operating cash flow gain.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no mixed units, missing periods or one-off items requiring flagging, so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

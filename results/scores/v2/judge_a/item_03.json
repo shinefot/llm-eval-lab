@@ -1,0 +1,35 @@
+{
+  "id": "item_03",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:01:28.149920+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "Both churn rates (10.0%, 14.0%) and the 4.0 pp change match the gold figures exactly.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "All supporting figures (300 vs 290 new, 200 to 294 churned, 2,100 to 2,096 end count) are correctly stated from the table.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "The response asserts \"underlying customer satisfaction or product-market fit issues that need immediate attention\" as a cause, which is not supported by the table and is not properly flagged as an unverified hypothesis.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The correct churn concept is applied and the direction (churn rising, net additions turning negative) correctly matches the data.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly identifies rising churn (not weaker acquisition) as the main driver of the swing to negative net additions, giving it the most weight.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "There is no mixed-unit, one-off, or missing-period issue in this table, and the response does not draw a firm conclusion contingent on missing data, so default pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

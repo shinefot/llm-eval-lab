@@ -1,0 +1,35 @@
+{
+  "id": "item_06",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:05:31.893480+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "Software correctly identified as driver with group +£164k (1,120→1,284) and Hardware concern -£96k (600→504), all matching the gold answer.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "Software revenue rose 30% (2,000→2,600), not as stated in \"a 50% revenue increase and 50% operating profit increase\".",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "The claim \"suggesting rising costs, pricing pressure, or operational inefficiencies\" introduces causes not in the table, and hedging with \"suggesting\" is not sufficient under C2.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "Correct concepts applied: profit growth attributed to Software, margin compression expressed in points (10% to 8%), directions consistent with the data.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "Commentary leads with the largest driver (Software, +£260k) and gives due weight to the Hardware margin decline as the key concern.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "No mixed units, one-offs or missing periods in the table; default Pass and the response appropriately notes the group total masks the Hardware issue.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

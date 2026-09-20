@@ -1,0 +1,35 @@
+{
+  "id": "item_06",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:02:09.765102+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "All headline figures (group profit growth £164k, Software contribution £260k, Hardware decline £96k) are correct and match gold.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "The commentary states Software had \"a 50% revenue increase\" but Software revenue only grew from £2,000k to £2,600k, a 30% increase, not 50%.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "\"suggesting rising costs, pricing pressure, or operational inefficiencies in this segment\" introduces causes not shown in the table, and the hedge word \"suggesting\" does not satisfy the requirement to explicitly state the data does not show the cause.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The correct concept (margin, growth attribution) is applied and the direction of the conclusion (Software drove growth, Hardware is the concern) matches the data.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly identifies Software as the main driver and Hardware's margin decline as the key concern, giving appropriate weight to both.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The response explicitly notes that Software's performance \"masked the underlying issue\" in Hardware, flagging that the group total obscures the segment-level problem.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "item_05",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:01:56.433531+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "Both DSO figures match gold within tolerance (45.0 and 59.9 vs 60.0, diff 0.1).",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "Revenue growth 10% (£730k) and receivables growth 47% (£420k) are correctly computed from the table.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "The response speculates \"suggesting either extended payment terms have been offered to drive sales growth, or collection performance has deteriorated\" — the extended-payment-terms cause is not stated in the table and is presented as a plausible explanation rather than explicitly flagged as unsupported by the data.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The response correctly identifies DSO increased, receivables outpacing revenue, and that this ties up cash and strains working capital, matching the correct direction and concept.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary correctly leads with the DSO increase and identifies receivables growing far faster than revenue as the main driver, matching the largest driver in the data.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "No one-off items, missing periods, or undefined terms are present in the table that require flagging, and the response does not draw an unsupported firm conclusion from missing data.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

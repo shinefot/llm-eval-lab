@@ -1,0 +1,35 @@
+{
+  "id": "item_01",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:04:33.726158+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "Operating margin 800/8,000 = 10.0% and 1,196/9,200 = 13.0%, a 3.0pp (300bps) rise — matches gold.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "Revenue +15% (£1,200k) and operating costs +3.5% (£84k) are correct, but \"The 496k improvement in operating profit\" is wrong; 1,196 − 800 = £396k.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "The claim \"This indicates the company achieved better cost control and efficiency gains\" asserts a cause the table cannot show (slow cost growth could equally be fixed-cost leverage), stated as fact rather than flagged as unsupported.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "Correct concept applied: margin expressed in percentage points/basis points, operating leverage interpreted in the right direction.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary leads with and gives most weight to the actual driver — operating costs growing 3.5% versus revenue 15% — rather than narrating every line.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table contains no mixed units, missing periods or one-off items, and the question is fully answerable from the data, so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

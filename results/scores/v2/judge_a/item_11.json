@@ -1,0 +1,35 @@
+{
+  "id": "item_11",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:03:54.679270+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "The headline conclusion \"No, the company cannot comfortably fund a GBP 300k dividend\" matches the gold answer's direction and reasoning.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "The response states \"a dramatic GBP 730k increase in working capital outflows (trade receivables up GBP 450k and inventory up GBP 280k)\" but omits the GBP 30k payables offset that the gold answer nets in, giving a net working-capital outflow of GBP 700k, not 730k.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "The response attributes the cash shortfall to \"severe working capital management issues—likely rapid business growth or inventory buildup,\" a cause not shown in the table, and the hedge word \"likely\" does not satisfy the guideline requirement to explicitly state the data does not show the cause.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The response correctly applies the concept that profit growth does not equal cash generation and reaches the same directional conclusion as the gold answer (dividend cannot be funded from operating cash flow).",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The largest driver (trade receivables, GBP 450k) is named and given appropriate weight alongside inventory, consistent with the gold answer's emphasis.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "There is no unflagged one-off item or missing-period issue in the table, and the response does not draw an unsupported firm conclusion beyond what the data allows; default applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

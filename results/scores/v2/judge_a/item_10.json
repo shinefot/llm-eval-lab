@@ -1,0 +1,35 @@
+{
+  "id": "item_10",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:03:40.683447+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "The conversion-rate improvement (0.5 pp, 2.0%→2.5%) is stated correctly, matching the gold figure.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "The response claims conversion \"on the original visitor base contributed approximately 1,000 additional orders,\" but 500,000 × 0.5% = 2,500, not 1,000 — a clear supporting-figure error.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All claims (visitor counts, order counts, percentages) trace directly to the table; no external causes are introduced.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The response concludes \"traffic contributed more to order growth,\" but the correct decomposition (500,000×0.5%=2,500 from conversion vs. 100,000×2%=2,000 from traffic, or 25% vs 20% relative growth) shows conversion contributed at least as much or more, contradicting the gold conclusion.",
+      "score": "F"
+    },
+    "C4": {
+      "reason": "The response does identify and weight a dominant driver (traffic, in its view) rather than listing all lines equally, so the materiality structure itself is sound even though the conclusion is wrong (captured under C3).",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "There is no ambiguous or missing data in the table requiring flagging, and the response does not silently resolve any such issue.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

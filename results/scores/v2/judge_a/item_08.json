@@ -1,0 +1,35 @@
+{
+  "id": "item_08",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:02:52.145622+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "The model states the underlying improvement was \"£95k, representing a 31.7% increase,\" but the correct calculation (495-250=245 vs FY2024's 300) shows underlying profit actually fell 18.3%, from 300k to 245k.",
+      "score": "F"
+    },
+    "C1b": {
+      "reason": "Aside from the miscalculated headline figure, the other supporting figures given (reported profit rise \"£195k (from £300k to £495k)\", \"revenue growth of £60k (2%)\") are all correct and consistent with the table.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "No causes or facts outside the table are introduced; the commentary only references revenue, costs, and the disclosed one-off gain.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The claim of \"a reduction in operating costs as a percentage of sales\" is the opposite of the table's data (2,700/3,000=90% vs 2,815/3,060≈92%), and the overall conclusion that underlying performance \"improved\" contradicts the actual underlying decline.",
+      "score": "F"
+    },
+    "C4": {
+      "reason": "The response correctly identifies the one-off property gain as the dominant driver of the reported profit increase and gives it primary emphasis before discussing revenue/cost effects.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The one-off gain is explicitly named and excluded from the \"underlying\" calculation, satisfying the requirement to flag and adjust for the one-off item even though the resulting figure is wrong.",
+      "score": "P"
+    }
+  },
+  "verdict": "Fail"
+}

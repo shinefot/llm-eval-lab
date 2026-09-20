@@ -1,0 +1,35 @@
+{
+  "id": "item_04",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:01:37.281100+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "All headline figures (revenue +300 favourable, cost of sales +339 adverse, operating profit -19 adverse) match the gold answer.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "All additional figures stated (gross profit -39 adverse, operating costs +20 favourable, percentages 6% and 11.3%) are correctly computed from the table.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "The response states \"This suggests margin compression, likely driven by unfavorable product mix, higher input costs, or manufacturing inefficiencies,\" introducing causes not present in the table, and hedge words do not cure this per the guidelines.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The correct concept (variance analysis, margin compression) is applied and the direction of each variance is correctly interpreted.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The response correctly identifies cost of sales overrun as the main driver and gives it the most weight, both in the table and commentary.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "There is no mixed unit, missing period, or one-off item in the table requiring flagging, so the default pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

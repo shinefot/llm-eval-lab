@@ -1,0 +1,35 @@
+{
+  "id": "item_11",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:06:57.298853+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "The headline answer \"No\" plus net profit +50% to GBP 600k and FY2025 operating cash flow of GBP 0k all match the gold answer.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "\"a dramatic GBP 730k increase in working capital outflows\" is wrong on either reading: the net FY2025 working capital absorption is GBP 700k (the GBP 30k payables inflow is ignored) and the year-on-year increase in outflow is GBP 640k.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "The cause \"likely rapid business growth or inventory buildup\" imports an outside explanation (growth in sales/revenue is nowhere in the table) with only a hedge word, which the guidelines say is insufficient.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "The concept is applied correctly: profit is distinguished from cash, working capital absorption is identified, and the direction of the conclusion (dividend not fundable) matches the data.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary leads with the working capital build and names the GBP 450k receivables increase first, correctly giving the largest driver most weight.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The response never flags that the table shows no cash balance or facilities, yet states firmly \"there is zero cash available for dividend distribution\", a conclusion that depends on information the table does not contain.",
+      "score": "F"
+    }
+  },
+  "verdict": "Send back"
+}

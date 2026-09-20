@@ -1,0 +1,35 @@
+{
+  "id": "item_05",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:05:20.016970+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "FY2024 DSO 45.0 is exact and FY2025 stated as 59.9 against the true 60.0, which is within the ±0.1 tolerance.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "Supporting figures check out: change ≈15 days, revenue +10% (£730k), receivables +47% (£420k = 46.7%).",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "\"suggesting either extended payment terms have been offered to drive sales growth\" introduces a cause outside the table with only a hedge, rather than stating the data does not show the reason.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "DSO is applied correctly, the rise is read as slower collection, and the cash impact direction (cash tied up) is right.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary names the key driver — receivables up 47% versus revenue up 10% — and gives it the most weight.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "No material data ambiguity or one-off item exists here, and the question's formula is prescribed, so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

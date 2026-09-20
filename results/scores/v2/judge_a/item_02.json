@@ -1,0 +1,35 @@
+{
+  "id": "item_02",
+  "judge": "judge_a",
+  "judge_model": "claude-sonnet-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:01:15.947584+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "The headline figure (FCF fell £200k, 800→600, -25%) matches the gold answer exactly.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "The response states capex \"nearly doubled from £400k to £900k\" but 400→900 is a 125% increase (2.25x), i.e. more than doubled, not nearly doubled — the verbal quantifier is inconsistent with the actual figure.",
+      "score": "F"
+    },
+    "C2": {
+      "reason": "All causal claims (capex increase offsetting OCF improvement, capex representing investment in assets) are directly derivable from the table; the closing sentence about FCF's general uses is generic and not a fabricated cause.",
+      "score": "P"
+    },
+    "C3": {
+      "reason": "The correct concept (FCF = OCF - capex) is applied and the direction of the conclusion (capex growth outpacing and offsetting OCF growth) matches the data.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "The commentary correctly leads with capex growth as the main driver while also noting the OCF improvement, matching the materiality of the gold answer.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "There is no one-off item, missing period, or undefined term in this table, so the default pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}

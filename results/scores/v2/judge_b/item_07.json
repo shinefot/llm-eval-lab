@@ -1,0 +1,35 @@
+{
+  "id": "item_07",
+  "judge": "judge_b",
+  "judge_model": "claude-opus-5",
+  "guidelines_version": "v2",
+  "guidelines_file": "annotation_guidelines_v2.md",
+  "scored_at": "2026-09-20T16:05:41.307769+00:00",
+  "scores": {
+    "C1a": {
+      "reason": "Total increase GBP 600k (+13.0%) and Marketing as the driver (GBP 450k, 45.0%, 75% of increase) all match the gold answer.",
+      "score": "P"
+    },
+    "C1b": {
+      "reason": "Salaries +120k (+4.0%), Travel +20k (+20.0%) and Rent +10k (+2.0%) are all correctly computed from the table.",
+      "score": "P"
+    },
+    "C2": {
+      "reason": "Introduces causes not in the table: \"This suggests a deliberate strategic investment in marketing activities\" and \"indicating a shift in resource allocation toward revenue-generating or customer acquisition activities\" — hedging does not rescue an outside cause.",
+      "score": "F"
+    },
+    "C3": {
+      "reason": "Correctly treats the change as a contribution to the GBP 600k increase and uses percentage growth per line appropriately.",
+      "score": "P"
+    },
+    "C4": {
+      "reason": "Names Marketing as \"the dominant cost driver, accounting for 75% of the total GBP 600k increase\" and gives it the most weight.",
+      "score": "P"
+    },
+    "C5": {
+      "reason": "The table has no mixed units, missing period or one-off item, and the totals foot, so the default Pass applies.",
+      "score": "P"
+    }
+  },
+  "verdict": "Send back"
+}
